@@ -6,7 +6,7 @@ import pandas as pd
 
 
 #국가대항전 데이터 받기
-df = pd.read_csv('C:/Users/dldbs/OneDrive/바탕 화면/archive/international_matches.csv')
+df = pd.read_csv('/archive/international_matches.csv')
 df = df.replace({'IR Iran': 'Iran','Korea Republic':'Korea'})
 df = df.fillna(df.mean())
 
